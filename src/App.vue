@@ -17,6 +17,12 @@
                 Login
             </button>
 
+            <div  id="logged in" v-if="$auth.isAuthenticated">
+            You have successfully Logged in!!
+
+            <a href="http://127.0.0.1:1880/ui">click here</a>
+        </div>
+        
             <button @click="logout" v-if="$auth.isAuthenticated">
                 Logout
             </button>
